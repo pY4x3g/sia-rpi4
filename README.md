@@ -1,6 +1,6 @@
 # sia-rpi4
 
-Here you can find instructions how to run siad and siac on a raspberry pi 4. This is a first version and will be (hopefuly) be udpated. If there are problems or you want to contribute, just open an issue or a merge request.
+Here you can find instructions how to run siad and siac on a raspberry pi 4. This is a first version and will (hopefuly) be udpated. If there are problems or you want to contribute, just open an issue or a merge request.
 
 Install and boot an official raspberian image (32bit) and follow the instructions of [sakaki-/bcm2711-kernel-bis](https://github.com/sakaki-/bcm2711-kernel-bis#example-2-updating-an-existing-booted-image). You only have to run the wget and sync command and add some lines to the config.txt. This will install an 64 bit kernel on the 32 bit userspace. Be aware that this installation but yourself at a risk as mentionen on the bottom of sakaki-/bcm2711-kernel-bis readme file.
 
