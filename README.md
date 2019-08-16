@@ -12,15 +12,10 @@ echo "export GOARCH=arm64
 export GOOS=linux" >> ~/.bashrc
 ```
 
-self compile: https://gitlab.com/NebulousLabs/Sia 
-via
+self compile siacoin binaries (siac siad via https://gitlab.com/NebulousLabs/Sia) with
 ```
-go get -u gitlab.com/NebulousLabs/Sia/...
-```
-or
-```
-git clone https://gitlab.com/NebulousLabs/Sia
-cd Sia && make
+git clone https://gitlab.com/NebulousLabs/Sia siasrc
+cd siasrc && make
 ```
 
 add siad siac to PATH so we can run it anywhere in the console
