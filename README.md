@@ -2,8 +2,7 @@
 
 This doc is currently under work, here are only some notes:
 
-official raspberian image
-Kernel from https://github.com/sakaki-/bcm2711-kernel-bis
+Install and boot an official raspberian image (32bit) and follow the instructions of [sakaki-/bcm2711-kernel-bis](https://github.com/sakaki-/bcm2711-kernel-bis#example-2-updating-an-existing-booted-image). You only have to run the wget and sync command and add some lines to the config.txt. This will install an 64 bit kernel on the 32 bit userspace.
 
 install golang
 ```
@@ -23,18 +22,20 @@ self compile siacoin binaries (siac siad via https://gitlab.com/NebulousLabs/Sia
 git clone https://gitlab.com/NebulousLabs/Sia siasrc
 cd siasrc && make
 ```
+The new binaries can be found under "~/go/bin/linux_arm64/", but we just add them to the path as follows.
 
-add siad siac to PATH so we can run it anywhere in the console
+Add siad siac to PATH so we can run it anywhere in the console
 ```
 echo 'PATH=~/go/bin/linux_arm64:$PATH' >> ~/.profile
 sudo reboot
 ```
 
 ### Update siac siad binaries
+If there is a new version or you want to pull the latest changes of sia run
 ```
 cd siasrc && git pull && make
 ```
-with this command the new changes will be pulled from gitlab and compiled into the "~/go/bin/linux_arm64/" folder which is already included in the path and the new binaries should be used automatically, just restard siad.
+With this command the new changes will be pulled from gitlab and compiled into the "~/go/bin/linux_arm64/" folder which is already included in the path and the new binaries should be used automatically, just restard siad.
 
 ### Set bandwidth limits
 We use trickle to limit the throughput only for the process
