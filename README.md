@@ -2,7 +2,11 @@
 
 This doc is currently under work, here are only some notes:
 
+official raspberian image
 Kernel from https://github.com/sakaki-/bcm2711-kernel-bis
+install go
+
+set GOARCH to arm64
 
 self compile: https://gitlab.com/NebulousLabs/Sia 
 via
