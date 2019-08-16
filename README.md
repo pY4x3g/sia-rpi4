@@ -7,6 +7,10 @@ Kernel from https://github.com/sakaki-/bcm2711-kernel-bis
 install go
 
 set GOARCH to arm64 (cross compile since userspace is 32bit)
+```
+echo "export GOARCH=arm64
+export GOOS=linux" >> ~/.bashrc
+```
 
 self compile: https://gitlab.com/NebulousLabs/Sia 
 via
