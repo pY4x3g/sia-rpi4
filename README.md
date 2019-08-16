@@ -19,4 +19,8 @@ git clone https://gitlab.com/NebulousLabs/Sia
 cd Sia && make
 ```
 
-add siad siac to PATH
+add siad siac to PATH so we can run it anywhere in the console
+```
+echo 'PATH=~/go/bin/linux_arm64:$PATH' >> ~/.profile
+sudo reboot
+```
