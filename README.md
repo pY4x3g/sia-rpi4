@@ -1,6 +1,6 @@
 # sia-rpi4
 
-This doc is currently under work, here are only some notes:
+This is a first version and will be (hopefuly) be udpated.
 
 Install and boot an official raspberian image (32bit) and follow the instructions of [sakaki-/bcm2711-kernel-bis](https://github.com/sakaki-/bcm2711-kernel-bis#example-2-updating-an-existing-booted-image). You only have to run the wget and sync command and add some lines to the config.txt. This will install an 64 bit kernel on the 32 bit userspace.
 
