@@ -51,4 +51,4 @@ trickle -s -d 50000 -u 30000 siad -M gctwr
 This will launch siad without the host and using only the renter.
 
 ### Notes
-You will have to set up some swap if you are going to download/upload larger files. This is out of the scope of this doc.
+You will have to set up some swap if you are going to download/upload larger files. This is out of the scope of this doc. See this doc as a proof of concept and do not use this in production enviroment.
