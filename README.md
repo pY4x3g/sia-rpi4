@@ -6,7 +6,7 @@ official raspberian image
 Kernel from https://github.com/sakaki-/bcm2711-kernel-bis
 install go
 
-set GOARCH to arm64 (chross compile since userspace is 32bit)
+set GOARCH to arm64 (cross compile since userspace is 32bit)
 
 self compile: https://gitlab.com/NebulousLabs/Sia 
 via
