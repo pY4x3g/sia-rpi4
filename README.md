@@ -4,12 +4,18 @@ This doc is currently under work, here are only some notes:
 
 official raspberian image
 Kernel from https://github.com/sakaki-/bcm2711-kernel-bis
-install go
+
+install golang
+```
+sudo apt-get install golang
+```
+
 
 set GOARCH to arm64 (cross compile since userspace is 32bit)
 ```
 echo "export GOARCH=arm64
 export GOOS=linux" >> ~/.bashrc
+bash #to start new bash with the new variables
 ```
 
 self compile siacoin binaries (siac siad via https://gitlab.com/NebulousLabs/Sia) with
